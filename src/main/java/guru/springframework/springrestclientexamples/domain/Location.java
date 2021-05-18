@@ -6,8 +6,8 @@ import java.util.Map;
 
 public class Location implements Serializable {
     private String street;
-    private City city;
-    private State state;
+    private String city;
+    private String state;
     private String postcode;
     private Map<String, Object> additionalProperties = new HashMap<>();
 
@@ -21,19 +21,19 @@ public class Location implements Serializable {
         this.street = street;
     }
 
-    public City getCity() {
+    public String getCity() {
         return city;
     }
 
-    public void setCity(City city) {
+    public void setCity(String city) {
         this.city = city;
     }
 
-    public State getState() {
+    public String getState() {
         return state;
     }
 
-    public void setState(State state) {
+    public void setState(String state) {
         this.state = state;
     }
 
